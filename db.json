@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Avastu",
+      "email": "avastunaik@avastu.com",
+      "phone": "9464728198"
+    },
+    {
+      "id": "2",
+      "name": "Sheela",
+      "email": "sheela@avastu.com",
+      "phone": "6789034345"
+    },
+    {
+      "id": "3",
+      "name": "Pankaj",
+      "email": "Pankaj@avastu.com",
+      "phone": "9087654909"
+    },
+    {
+      "id": "4",
+      "name": "Solanki",
+      "email": "solanki@gmail.com",
+      "phone": "987654567"
+    },
+    {
+      "id": "5",
+      "name": "Pritam",
+      "email": "pritam123@avastu.com",
+      "phone": "8976984532"
+    }
+  ]
+}
