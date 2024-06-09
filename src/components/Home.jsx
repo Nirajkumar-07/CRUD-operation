@@ -4,6 +4,7 @@ import { Link, redirect, useNavigate } from "react-router-dom";
 
 function Home() {
   const [data, setData] = useState([]);
+  let logUser = localStorage.getItem("Name");
 
   useEffect(() => {
     axios
@@ -23,6 +24,13 @@ function Home() {
         .catch((err) => console.log(err));
     }
   };
+
+  const handleLogOut = () => {
+    localStorage.clear();
+    window.location.reload();
+  };
+
+  if (!localStorage.getItem("Email")) return <Login />;
   return (
     <div className="d-flex flex-column justify-content-center align-items-center bg-light vh-100">
       <h1>List of Users</h1>
@@ -73,6 +81,15 @@ function Home() {
             ))}
           </tbody>
         </table>
+      </div>
+      <div className="text-end w-100 px-3">
+        <div>
+          <span className="fw-bold">User: </span>
+          {logUser}
+        </div>
+        <button className="btn btn-danger fs-15" onClick={handleLogOut}>
+          Sign Out
+        </button>
       </div>
     </div>
   );
