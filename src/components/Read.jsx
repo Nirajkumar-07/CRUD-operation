@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import Login from "./Login";
 
 function Read() {
   const [data, setData] = useState([]);
