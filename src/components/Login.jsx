@@ -10,7 +10,7 @@ function Login() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/users`)
+      .get(`https://host-api-3o6d.onrender.com/users`)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
