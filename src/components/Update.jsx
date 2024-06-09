@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import Login from "./Login";
 
 function Update() {
   const [values, setValues] = useState({ name: "", email: "", phone: "" });
